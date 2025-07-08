@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+// 1. Sovrascrivi le variabili di colore prima di importare Bootstrap
+$primary: #d32127;
+$secondary: #420000;
+$yellow: #ffb000;
+
+// Custom.scss
+
+@import "bootstrap/scss/bootstrap";
+
+// form validation stlyling
+input {
+  &.ng-touched {
+    &.ng-invalid {
+      border: 1px solid $primary;
+    }
+  }
+}
